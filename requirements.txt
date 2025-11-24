@@ -1,0 +1,28 @@
+# Core LangChain and LangGraph
+langchain>=0.1.0
+langgraph>=0.0.1
+langchain-openai>=0.0.5
+langchain-community>=0.0.20
+
+# Vector Stores
+pinecone-client>=3.0.0
+faiss-cpu>=1.7.4
+
+# Tools and Integrations
+tavily-python>=0.3.0
+
+# UI
+streamlit>=1.28.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Optional: For documentation
+# sphinx>=7.0.0
+# sphinx-rtd-theme>=1.3.0
+
