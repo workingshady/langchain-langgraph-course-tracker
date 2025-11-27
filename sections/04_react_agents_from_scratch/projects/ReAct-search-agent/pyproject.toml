@@ -1,0 +1,15 @@
+[project]
+name = "react-search-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "black>=25.11.0",
+    "langchain>=1.1.0",
+    "langchain-google-genai>=3.2.0",
+    "langchain-tavily>=0.2.13",
+    "langsmith>=0.4.49",
+    "python-dotenv>=1.2.1",
+    "tavily-python>=0.7.13",
+]
