@@ -39,6 +39,7 @@ genai_llm = ChatGoogleGenerativeAI(
         api_key=GOOGLE_API_KEY,
         temperature=0.5,
 )
+structured_llm=genai_llm.with_structured_output(AgentResponse)
 
 tools = [
     TavilySearch(api_key=TAVILY_API_KEY)
@@ -55,7 +56,7 @@ react_prompt_with_format_instructions = PromptTemplate(
         "input",
         "agent_scratchpad"
     ],
-    partial_variables={"format_instructions": output_parser.get_format_instructions()}
+    # partial_variables={"format_instructions": output_parser.get_format_instructions()}
 )
 
 
@@ -68,8 +69,11 @@ agent_executor = AgentExecutor(agent,tools=tools,verbose=True)
 # chain = agent_executor
 
 extract_output = RunnableLambda(lambda x: x["output"])
-parse_output = RunnableLambda(lambda x: output_parser.parse(x))
-chain = agent_executor | extract_output | parse_output
+# parse_output = RunnableLambda(lambda x: output_parser.parse(x))
+chain = (agent_executor
+         | extract_output
+        #  | parse_output
+         | structured_llm)
 
 
 def main():
