@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://www.langchain.com/" target="_blank" rel="noopener noreferrer">
-    <img src="https://theaiinsider.tech/wp-content/uploads/2025/07/Screenshot-3112.png" alt="LangChain Logo" width="320"/>
+    <img src="https://theaiinsider.tech/wp-content/uploads/2025/07/Screenshot-3112.png" alt="LangChain Logo" width="700"/>
   </a>
 </p>
 
@@ -63,20 +63,9 @@ langchain-essentials-tracker/
 ├── studio/               # LangSmith studio files
 │
 │
-└── src/                  # Source code
+└── agents/                  # Source code
     ├── __init__.py
-    ├── agents/           # Agent implementations
-    │   ├── base_agent.py
-    │   ├── sql_agent.py
-    │   ├── dynamic_prompt_agent.py
-    │   └── hitl_agent.py
-    │
-    ├── tools/            # Custom tools
-    │   ├── sql_tool.py
-    │   ├── file_tool.py
-    │   └── mcp_adapter_tool.py
-    │
-    └── utils/            # Utility functions
+
 
 ```
 
