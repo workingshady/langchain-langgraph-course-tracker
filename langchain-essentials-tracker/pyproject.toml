@@ -1,0 +1,23 @@
+[project]
+name = "langchain-essentials-tracker"
+version = "0.1.0"
+description = "LangChain Essentials Course Tracker - Learn core LangChain concepts with create_agent"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-community>=0.3.0",
+    "langgraph>=0.2.0",
+    "langsmith>=0.1.0",
+    "python-dotenv>=1.0.0",
+    "jupyter>=1.0.0",
+    "jupyterlab>=4.0.0",
+    "ipykernel>=6.25.0",
+    "black>=23.0.0",
+
+]
+
+
+
+
