@@ -1,0 +1,28 @@
+[project]
+name = "chat_with_pdf"
+version = "0.1.0"
+description = "RAG pipeline for chat with  analysis using Pinecone vector database and Google Gemini"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=0.1.0",
+    "langchain-google-genai>=1.0.0",
+    "langchain-google-vertexai",
+    "langchain-pinecone>=0.0.1",
+    "pinecone-client>=3.0.0",
+    "python-dotenv>=1.0.0",
+    "langchainhub>=0.1.14",
+    "black>=23.0.0",
+    "langchain-community",
+    "langchain_text_splitters",
+    "langchain-classic>=1.0.0",
+    "pypdf>=6.4.0",
+    "faiss-cpu>=1.13.0",
+    "sentence-transformers>=5.1.2",
+]
+
+[tool.uv.workspace]
+members = [
+    "chat_with_pdf",
+]
+
