@@ -72,4 +72,6 @@ pinecone_data/
 
 
 
-
+# Vector Store (generated files)
+vector_store/
+*.pkl
